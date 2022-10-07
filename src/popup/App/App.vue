@@ -5,8 +5,13 @@
 </template>
 
 <script>
+// import googleUtils from "../../utils/google-utils";
 export default {
   name: "app",
+  async mounted() {
+    // console.log(chrome.runtime);
+    // googleUtils.getMessageObj('popup').postMessage({})
+  },
 };
 </script>
 
