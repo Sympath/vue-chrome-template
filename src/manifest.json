@@ -5,18 +5,14 @@
   "version": "0.0.1",
   "options_page": "options.html",
   "browser_action": {
-    "default_icon": "images/icon16.png",
-    "default_title": "hello-world-plugin",
     "default_popup": "popup.html"
-  },
-  "background": {
-    "scripts": ["js/background.js"]
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["js/content-script.js"],
-      "run_at": "document_start"
+      "matches": ["*://*/*"],
+      "css": ["content-script/content-script.css"],
+      "js": ["content-script/cs-init.js", "js/content-script.js"],
+      "run_at": "document_end"
     }
   ]
 }

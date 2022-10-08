@@ -1,16 +1,19 @@
 <template>
   <div class="main_app">
-    <h1>Hello popup1</h1>
+    <h1>Hello popup</h1>
+    <el-divider></el-divider>
   </div>
 </template>
 
 <script>
-// import googleUtils from "../../utils/google-utils";
 export default {
   name: "app",
-  async mounted() {
-    // console.log(chrome.runtime);
-    // googleUtils.getMessageObj('popup').postMessage({})
+  mounted() {
+    this.$notify.success({
+      title: "Info",
+      message: "这是一条没有关闭按钮的消息",
+      showClose: false,
+    });
   },
 };
 </script>
