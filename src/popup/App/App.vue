@@ -9,11 +9,7 @@
 export default {
   name: "app",
   mounted() {
-    this.$notify.success({
-      title: "Info",
-      message: "这是一条没有关闭按钮的消息",
-      showClose: false,
-    });
+    
   },
 };
 </script>
