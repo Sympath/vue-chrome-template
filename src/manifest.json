@@ -3,10 +3,18 @@
   "name": "hello-chrome-vue",
   "description": "vue开发chrome",
   "version": "0.0.1",
+  "icons": {
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
   "options_page": "options.html",
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "img/unit.png"
   },
+  "background": {
+		"scripts": ["js/background.js"]
+	},
   "content_scripts": [
     {
       "matches": ["*://*/*"],

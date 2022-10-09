@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-button @click="handleClick">点我看弹窗</el-button>
+    <el-button @click="handleClick">点我看弹窗11</el-button>
   </div>
 </template>
 
@@ -8,6 +8,9 @@
 export default {
   data() {
     return {};
+  },
+  mounted(){
+    
   },
   methods: {
     handleClick() {

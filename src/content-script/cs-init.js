@@ -1,3 +1,3 @@
-const reviewBookmarkDiv = document.createElement('div');
-reviewBookmarkDiv.id = 'contentScript';
-document.body.appendChild(reviewBookmarkDiv);
+const contentScriptDiv = document.createElement('div');
+contentScriptDiv.id = 'contentScript';
+document.body.appendChild(contentScriptDiv);

@@ -34,6 +34,12 @@ let commonPlugins = [
 module.exports = {
   pages: pagesObj,
   configureWebpack: {
+    entry: {
+			background: "./src/background/main.js"
+		},
+		output: {
+			filename: "js/[name].js"
+		},
     plugins: [CopyWebpackPlugin(commonPlugins)]
   }
 };
