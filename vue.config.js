@@ -25,7 +25,7 @@ const chromeOptions = ["override-page", "background", "popup", "options", "conte
 chromeOptions.forEach(name => {
   let chromePages = ["override-page", "popup", "options", "content-script"]
   let isExist = fs.existsSync(path.resolve(__dirname, `src/${name}`))
-  console.log('name: ', name, isExist);
+  // console.log('name: ', name, isExist);
   if (isExist) {
     if (name === 'background') {
       entry.background = "./src/background/main.js"
@@ -47,7 +47,7 @@ chromeOptions.forEach(name => {
 
   }
 });
-console.log('commonPlugins', commonPlugins);
+// console.log('commonPlugins', commonPlugins);
 module.exports = {
   pages: pagesObj,
   configureWebpack: {
